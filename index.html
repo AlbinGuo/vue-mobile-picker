@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh-cn" style="font-size: 100px">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=0.5,maximum-scale=0.5,minimum-scale=0.5">
+    <meta name="format-detection" content="telephone=no">
+    <title>ssit-mobile-date-picker</title>
+  </head>
+  <body>
+    <div id="app" v-cloak>
+      <button @click="v=!v">ddd</button>
+      <picker :visible="v" :data="list" :row-number="7" @confirm="confirm" @cancel="v=!v" :default-index="defaultIndex" :show-toolbar="true" @change="change"></picker>
+    </div>
+    <script src="/dist/index.js"></script>
+  </body>
+</html>
